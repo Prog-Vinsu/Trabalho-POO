@@ -40,5 +40,13 @@ public class Professor extends Pessoa {
         this.salario_bruto = salario_bruto;
     }
     
-    
+    public double salario_liquido(double salario_bruto) {
+        double salario_liquido;
+        if (salario_bruto > 5000) {
+            salario_liquido = salario_bruto * 0.225;
+        } else {
+            salario_liquido = salario_bruto * 0.14;
+        }
+        return salario_liquido;
+    }
 }
